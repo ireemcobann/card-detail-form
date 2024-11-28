@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/card.css" />
+    <script src="assets/js/card-detail.js" defer></script>
+    <title>card details</title>
+  </head>
+  <body>
+    <div class="container">
+     <div class="desktop-flex">
+      <div class="header">
+        <div class="card-front">
+          <div class="card-top">
+            <span></span>
+            <span></span>
+          </div>
+          <p id="cardNumber">0000 0000 0000 0000</p>
+          <div class="card-name">
+            <p id="cardName">JANE APPLESEED</p>
+            <span id="lastDate">00/00</span>
+          </div>
+        </div>
+        <div class="card-back">
+          <span></span>
+          <h5 id="cvc">000</h5>
+        </div>
+      </div>
+      <div class="cardInfo">
+        <div class="card-content">
+          <h4>Cardholder Name</h4>
+          <input type="text" placeholder="e.g. Jane Appleseed" id="cardHolderName"/>
+        </div>
+        <div class="card-content">
+          <h4>Card Number</h4>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="cardNumberInput" />
+          <p id="numberError" class="error">Wrong format, numbers only</p>
+        </div>
+        <div class="card-content-date">
+          <div class="date-left">
+            <h4>Exp. Date (MM/YY)</h4>
+            <div class="inputs">
+              <input type="number" placeholder="MM" id="monthDate" />
+              <input type="number" placeholder="YY" id="yearDate" />
+              
+            </div>
+            <p id="dateError" class="error">Can’t be blank</p>
+          </div>
+          <div class="date-right">
+            <h4>CVC</h4>
+            <input type="number" placeholder="e.g. 123" id="cvcNumber" />
+            <p id="cvcError" class="error">Can’t be blank</p>
+          </div>
+          
+        </div>
+        <button class="confirmBtn">Confirm</button>
+      </div>
+     </div>
+    </div>
+  </body>
+</html>
